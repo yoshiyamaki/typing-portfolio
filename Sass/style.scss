@@ -1,0 +1,54 @@
+// style.scss
+
+// ① 変数の定義
+$main-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$padding: 16px;
+
+// ② ベースのスタイル
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: $text-color;
+  background-color: $secondary-color;
+  padding: $padding;
+}
+
+// ③ ネスト（入れ子構造）
+header {
+  background-color: $main-color;
+  padding: $padding;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-right: 20px;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ④ 演算の例
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $padding / 2;
+}
