@@ -1,0 +1,91 @@
+body {
+  background: url(../img/renga-siro.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  font-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#bg_kumo {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/sunglasses11.png);
+  position: fixed;
+  left: 50px;
+  top: -70px;
+  padding: 500px;
+  z-index: 20;
+}
+
+#wrapper {
+  font-size: 2rem;
+  line-height: 700px;
+  width: 30%;
+  min-height: 100vh;
+  max-width: 1200px;
+  min-width: 300px;
+  background-color: lightgrey;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 30;
+  overflow: hidden;
+  text-align: center;
+}
+
+#wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ✅ 画像をボックスにうまく収める */
+  display: block;
+}
+
+#wrapper img:first-of-type {
+  margin-top: 300px;
+}
+
+#bg_mountain {
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../img/sunglasses-women.jpg);  */
+  background-repeat: repeat-x;
+  background-position: left 500px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+footer {
+  text-align: center;
+}
+
+
+.back-to-top {
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  color: #007acc;
+}
+
+@media screen and (max-width: 762px) {
+  #wrapper {
+    line-height: 600px;
+    padding: 10px;
+  }
+
+  #wrapper img:first-of-type {
+  margin-top: 150px;
+}
+  #bg_kumo {
+    background-image: url(../img/sunglasses13.png);
+    left: -50px;
+    top: 70px;
+  }
+  
+}
